@@ -1,11 +1,9 @@
 import os
-
-from rango import views
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tango_with_django_project.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tango_with_django_project.settings")
 
 import django
 django.setup()
+
 from rango.models import Category, Page
 
 def populate():
@@ -55,4 +53,5 @@ def add_cat(name, views=0, likes=0):
 
 if __name__ == '__main__':
     print('Starting Rango population script...')
+    #os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tango_with_django_project.settings')
     populate()

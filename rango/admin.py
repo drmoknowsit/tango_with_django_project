@@ -12,6 +12,7 @@ class PageAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'url')
 
 
+
 # Register your models here.
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Page, PageAdmin)
